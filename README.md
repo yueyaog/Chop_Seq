@@ -6,11 +6,17 @@ Note: To avoid run out the memory of your own precious computer while processing
 # Test
 Chop_Seq.py takes a sequence fasta file and it will split the long sequence in the file into required max length.
 
+You can test this script using the ```Test.fa``` file.
+
+```
+python Chop_Seq.py -i Test.fa -m 15000 -o Test_parsed.fa
+```
+The output index is >scaffold_n_[chuck_index]_[length in bp]
+
+# Command for running Chop_Seq.py
 ```
 python Chop_Seq.py -i /path/to/input.fa -m [maxlength] -o /path/to/output.fa
 ```
-
-The output index is >scaffold_n_[chuck_index]_[length in bp]
 
 
 ## Details
